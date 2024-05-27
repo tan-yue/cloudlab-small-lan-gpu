@@ -141,9 +141,9 @@ for i in range(params.nodeCount):
     node.addService(pg.Execute(
         shell="sh",
         command="sudo /local/repository/startup.sh &>> /local/logs/startup.log"))
-    node.addService(pg.Execute(
-        shell="sh",
-        command="sudo reboot"))
+    #node.addService(pg.Execute(
+    #    shell="sh",
+    #    command="sudo reboot"))
     pass
 
 # Print the RSpec to the enclosing page.
