@@ -140,7 +140,7 @@ for i in range(params.nodeCount):
     # run startup.sh on each node
     node.addService(pg.Execute(
         shell="sh",
-        command="sudo /local/repository/startup.sh &>> /local/startup.log"))
+        command="sudo /local/repository/startup.sh &>> /local/logs/startup.log"))
     pass
 
 # Print the RSpec to the enclosing page.
